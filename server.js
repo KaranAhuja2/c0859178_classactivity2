@@ -36,7 +36,10 @@ app.get("/valueofday/:year(\\d{4})-:month(\\d{2})-:day(\\d{2})", (req, res) => {
   console.log(req.params)
   res.send(req.params)
 });
-  
+  //http://localhost:3000/admin
+app.get('/c0859178', (req, res) => {
+  res.send('c0859178(karan)')
+})
 app.listen(process.env.PORT  || SERVER_PORT, () => {
     console.log(`Server running at http://${SERVER_HOST}:${SERVER_PORT}/`);
 })
